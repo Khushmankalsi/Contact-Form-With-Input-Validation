@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../flat-icn-font/flaticon.ttf?92c18bb4a83ca25255a20027c5427312") format("truetype"),
+    url("../flat-icn-font/flaticon.woff?92c18bb4a83ca25255a20027c5427312") format("woff"),
+    url("../flat-icn-font/flaticon.woff2?92c18bb4a83ca25255a20027c5427312") format("woff2"),
+    url("../flat-icn-font/flaticon.eot?92c18bb4a83ca25255a20027c5427312#iefix") format("embedded-opentype"),
+    url("../flat-icn-font/flaticon.svg?92c18bb4a83ca25255a20027c5427312#flaticon") format("svg");
+}
+
+/*i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {*/
+.flaticon::before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+}
+/*[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+    font-size: 20px;
+    font-style: normal;
+}*/
+
+.flaticon-cardiovascular:before {
+    content: "\f101";
+}
+.flaticon-map:before {
+    content: "\f102";
+}
+.flaticon-heart-beat:before {
+    content: "\f103";
+}
+.flaticon-send:before {
+    content: "\f104";
+}
+.flaticon-first-aid-kit:before {
+    content: "\f105";
+}
+.flaticon-heart:before {
+    content: "\f106";
+}
+.flaticon-support:before {
+    content: "\f107";
+}
+.flaticon-cardiology:before {
+    content: "\f108";
+}
+.flaticon-healthcare:before {
+    content: "\f109";
+}
+.flaticon-cardiogram:before {
+    content: "\f10a";
+}
+.flaticon-call:before {
+    content: "\f10b";
+}
+.flaticon-shopping-cart:before {
+    content: "\f10c";
+}
+.flaticon-search:before {
+    content: "\f10d";
+}
+.flaticon-exit:before {
+    content: "\f10e";
+}
+.flaticon-microsurgery:before {
+    content: "\f10f";
+}
+.flaticon-phone-call:before {
+    content: "\f110";
+}
+.flaticon-email:before {
+    content: "\f111";
+}
+.flaticon-clock:before {
+    content: "\f112";
+}
+.flaticon-share:before {
+    content: "\f113";
+}
+.flaticon-chat:before {
+    content: "\f114";
+}
+.flaticon-pdf:before {
+    content: "\f115";
+}
+.flaticon-arrow-down:before {
+    content: "\f116";
+}
+.flaticon-straight-quotes:before {
+    content: "\f117";
+}
+.flaticon-veterinarian:before {
+    content: "\f118";
+}
+.flaticon-hospital:before {
+    content: "\f119";
+}
+.flaticon-heart-disease:before {
+    content: "\f11a";
+}
+.flaticon-cardiology-2:before {
+    content: "\f11b";
+}
+.flaticon-diagnosis:before {
+    content: "\f11c";
+}
+.flaticon-arrow-pointing-to-right:before {
+    content: "\f11d";
+}
+.flaticon-map-1:before {
+    content: "\f11e";
+}
+.flaticon-heart-2:before {
+    content: "\f11f";
+}
+.flaticon-heart-3:before {
+    content: "\f120";
+}
+.flaticon-organ-transplantation:before {
+    content: "\f121";
+}
+.flaticon-heart-attack:before {
+    content: "\f122";
+}
+.flaticon-heart-4:before {
+    content: "\f123";
+}
+.flaticon-vaccine:before {
+    content: "\f124";
+}
+.flaticon-heart-5:before {
+    content: "\f125";
+}
+.flaticon-heart-6:before {
+    content: "\f126";
+}
+.flaticon-cardiologist:before {
+    content: "\f127";
+}
+.flaticon-health-care:before {
+    content: "\f128";
+}
+.flaticon-heart-7:before {
+    content: "\f129";
+}
+.flaticon-defribillator:before {
+    content: "\f12a";
+}
+.flaticon-heart-8:before {
+    content: "\f12b";
+}
+.flaticon-emergency-call:before {
+    content: "\f12c";
+}
+.flaticon-awards:before {
+    content: "\f12d";
+}
+.flaticon-ecg-reading:before {
+    content: "\f12e";
+}
+.flaticon-patient:before {
+    content: "\f12f";
+}
+.flaticon-patient-1:before {
+    content: "\f130";
+}
+.flaticon-medical-insurance:before {
+    content: "\f131";
+}
+.flaticon-search-1:before {
+    content: "\f132";
+}
+.flaticon-placeholder:before {
+    content: "\f133";
+}
+.flaticon-healthcare-2:before {
+    content: "\f134";
+}
+.flaticon-file:before {
+    content: "\f135";
+}
+.flaticon-tick-mark:before {
+    content: "\f136";
+}
+.flaticon-doctor:before {
+    content: "\f137";
+}
+.flaticon-doctor-1:before {
+    content: "\f138";
+}
+.flaticon-right-arrow:before {
+    content: "\f139";
+}
+.flaticon-share-1:before {
+    content: "\f13a";
+}
+.flaticon-left-quote:before {
+    content: "\f13b";
+}
+.flaticon-comment:before {
+    content: "\f13c";
+}
+.flaticon-phone-call-1:before {
+    content: "\f13d";
+}
+.flaticon-bubble-chat:before {
+    content: "\f13e";
+}

@@ -1,0 +1,109 @@
+.timeline {
+    position: relative;
+    padding: 50px 0;
+}
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(180deg, #007bff, #00d4ff);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    animation: growLine 2s ease-in-out;
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    width: 50%;
+    padding: 10px 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #007bff, #00d4ff);
+    border-radius: 50%;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: pulse 1.5s infinite;
+}
+.timeline-content {
+    position: relative;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.timeline-content:hover {
+    transform: scale(1.05);
+}
+.tooltip-box {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+.timeline-content:hover .tooltip-box {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes growLine {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

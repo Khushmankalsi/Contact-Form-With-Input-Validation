@@ -1,0 +1,19 @@
+.main-sec-1 h3 {
+    display: inline-block !important;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 5s;
+    animation-timing-function: steps(50, end);
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 60% }
+}
+
+
+

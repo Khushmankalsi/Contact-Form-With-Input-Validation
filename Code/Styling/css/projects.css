@@ -1,0 +1,119 @@
+
+a {
+  text-decoration: none !important ; 
+  color: inherit !important; 
+  outline: none !important; 
+}  
+.navbar-collapse{
+    justify-content: end;
+    padding-right: 20px;
+}
+.nav-item{
+    padding: 10px 20px;
+}
+.navbar-brand{ 
+padding: 10px 20px;
+font-size: 30px !important;
+}
+.nav-link{
+    font-family: "Inter", serif !important;
+    font-size: 18px !important;
+    color: white !important;
+    position: relative;
+    display: inline-block;
+}
+.nav-link::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    top: 37px;
+    right: -0.5px;
+    transition: 0.7s;
+
+}
+.nav-link:hover::before{
+    width: 100%;
+    top: 37px;
+    left: -0.5px;
+    transition: 0.7s;
+}
+
+.navbar{
+    background-color: black;
+}
+.navbar-brand h1{
+    font-size: 35px;
+}
+.navbar-brand h1:hover{
+    text-decoration: none !important;
+    color: #007bff !important;
+}
+.navbar  h1{
+  color: #007bff !important;
+}
+  
+  footer{
+    background-color: #162d59;
+    color: white;
+    display: flex !important;
+    justify-content: center !important ;
+    align-items: center !important ;
+  }
+  footer p{
+    margin-bottom: 0px !important;
+    padding: 10px 0px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important ;
+    align-items: center !important ;
+  }
+ 
+
+.projects h1{
+    padding: 40px 0px;
+    position: relative;
+    color: #007bff !important;
+}
+.project-main-bx{
+    margin: 20px 0px !important;
+}
+
+.projects .row-line
+{
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black ;
+    padding: 30px 0px  !important;
+    margin: 10px  0px !important;
+
+}
+.projects .project-main-bx{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.386);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+.projects .project-main-bx h2{
+    color: #007bff;
+}
+.projects .project-main-bx p{
+    font-style: italic;
+}
+.btn{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    margin-top: 40px !important;
+    border-radius: 1% !important;
+}
+.Project-name-heading{
+    font-size: 30px !important;
+    padding: 10px 0px;
+}

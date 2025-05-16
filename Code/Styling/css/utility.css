@@ -1,0 +1,15 @@
+/* For Headings */
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); 
+/* For Paragraphs */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+p{
+    font-family: "Inter", serif;
+}
+h1,h2,h3,h4,h5,h6{
+        font-family: "Oswald", serif !important ;
+        font-style: normal;
+}
+a{
+    text-decoration: none !important;
+}
