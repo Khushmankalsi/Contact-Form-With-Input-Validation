@@ -71,10 +71,10 @@ a {
 }
 .navbar-brand h1:hover{
     text-decoration: none !important;
-    color: #007bff !important;
+    color: rgba(118, 116, 243, 0.8) !important;
 }
 .navbar  h1{
-  color: #007bff !important;
+  color: rgba(118, 116, 243, 0.8) !important;
 }
 
 /* New animation for navbar h3 text */
@@ -98,7 +98,7 @@ a {
     border-bottom: 1px solid black;
 }
 .main-sec-1 .main-sec-1-left{
-    background-color: #007bff;
+    background-color: rgba(118, 116, 243, 0.8);
     padding: 80px 30px;
 }
 .main-sec-1 .main-sec-1-left .circular-image {
@@ -129,7 +129,7 @@ a {
     width: 100%;
     height: 3px;
     bottom: 0%;
-    background-color: #007bff;
+    background-color: rgba(118, 116, 243, 0.8);
 }
 .main-sec-1 .main-sec-1-left .inside-container .social-icons a {
     color: black !important;
@@ -139,7 +139,7 @@ a {
 .main-sec-1 .main-sec-1-left .inside-container .social-icons {
     position: absolute;
     bottom: -1%;
-    background: #007bff4a;
+    background: rgba(118, 116, 243, 0.8)4a;
     padding: 8px 139px;
     width: 102%;
     left: -1%;
@@ -149,7 +149,7 @@ padding: 20px 30px;
 }
 .main-sec-1 .main-sec-1-right .heading-1 h1{
     font-size: 78px;
-    color: #007bff;
+    color: rgba(118, 116, 243, 0.8);
 } 
 .main-sec-1 .main-sec-1-right .heading-2 h2{
     position: relative;
@@ -162,26 +162,26 @@ padding: 20px 30px;
 .main-sec-1 .main-sec-1-right .buttons .btn-1{
     padding: 7px 20px;
     margin: 0px 10px;
-    background-color: #007bff;
+    background-color: rgba(118, 116, 243, 0.8);
     border: 1px solid white;
     color: white;
     border-radius: 16px;
 }
 .main-sec-1 .main-sec-1-right .buttons .btn-1:hover{
     background-color: white ;
-    border: 1px solid #007bff;
-    color: #007bff;
+    border: 1px solid rgba(118, 116, 243, 0.8);
+    color: rgba(118, 116, 243, 0.8);
 }
 .main-sec-1 .main-sec-1-right .buttons .btn-2{
     padding: 7px 20px;
     margin: 0px 10px;
     background-color: white;
-    border: 1px solid #007bff;
-    color: #007bff ;
+    border: 1px solid rgba(118, 116, 243, 0.8);
+    color: rgba(118, 116, 243, 0.8) ;
     border-radius: 16px;
 }
 .main-sec-1 .main-sec-1-right .buttons .btn-2:hover{
-    background-color: #007bff;
+    background-color: rgba(118, 116, 243, 0.8);
     border: 1px solid white;
     color: white ;
 }
