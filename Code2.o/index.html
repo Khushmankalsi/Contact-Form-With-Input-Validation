@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Form with Validation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      background: linear-gradient(135deg, #7f6eff, #60c1ff);
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .contact-card {
+      background-color: white;
+      border-radius: 30px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    }
+    .dark-mode .contact-card {
+      background-color: #1e1e1e;
+    }
+    .form-control {
+      border: 2px solid black;
+      border-radius: 0;
+    }
+    .form-control:focus {
+      box-shadow: none;
+    }
+    .form-icon {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      color: #333;
+    }
+    .dark-mode .form-icon {
+      color: #aaa;
+    }
+    .input-wrapper {
+      position: relative;
+    }
+    .input-wrapper input,
+    .input-wrapper textarea {
+      padding-left: 40px;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #4f46e5;
+    }
+    .dark-mode .section-title {
+      color: #8ab4f8;
+    }
+    .contact-info i {
+      width: 20px;
+    }
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 1.5rem;
+      background: #f1f1f1;
+      color: #4f46e5;
+      padding: 10px;
+      border-radius: 50%;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .dark-mode .social-icons a {
+      background: #333;
+      color: #8ab4f8;
+    }
+    .social-icons a:hover {
+      background: #007bff;
+      color: #fff;
+    }
+    .error {
+      border-color: red !important;
+    }
+    .valid {
+      border-color: blue !important;
+    }
+    .error-message {
+      color: red;
+      font-size: 0.9rem;
+    }
+    #terms.error {
+      outline: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <div class="d-flex justify-content-end">
+    <button class="btn btn-secondary mb-3" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </div>
+  <div class="contact-card">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="section-title">Let's Talk</h3>
+        <p class="mb-4">To request a quote or want to meet up for coffee, contact us directly or fill out the form and we will get back to you promptly.</p>
+        <form id="contactForm" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Full Name</label>
+              <div class="input-wrapper">
+                <i class="fa fa-user form-icon"></i>
+                <input type="text" class="form-control" id="name" placeholder="User Name">
+                <div class="error-message" id="nameError"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email Address</label>
+              <div class="input-wrapper">
+                <i class="fa fa-envelope form-icon"></i>
+                <input type="email" class="form-control" id="email" placeholder="admin@gmail.com">
+                <div class="error-message" id="emailError"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Phone Number</label>
+              <div class="input-wrapper">
+                <i class="fa fa-phone form-icon"></i>
+                <input type="text" class="form-control" id="phone" placeholder="0123456789">
+                <div class="error-message" id="phoneError"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Subject</label>
+              <div class="input-wrapper">
+                <i class="fa fa-comment form-icon"></i>
+                <input type="text" class="form-control" id="subject" placeholder="Type here">
+                <div class="error-message" id="subjectError"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Your Message</label>
+              <div class="input-wrapper">
+                <i class="fa fa-pencil-alt form-icon"></i>
+                <textarea class="form-control" id="message" placeholder="Type your message here" rows="4"></textarea>
+                <div class="error-message" id="messageError"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="terms">
+                <label class="form-check-label" for="terms">
+                  I agree to the terms and conditions
+                </label>
+                <div class="error-message" id="termsError"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary px-4">SEND MESSAGE</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-4 mt-4 mt-md-0">
+        <h4 class="section-title">Contact Information</h4>
+        <ul class="list-unstyled mt-3 contact-info">
+          <li class="mb-2"><i class="fa fa-map-marker-alt"></i> Ludhiana, Panjab, India</li>
+          <li class="mb-2"><i class="fa fa-phone"></i> 7059401234</li>
+          <li class="mb-2"><i class="fa fa-envelope"></i> kskskalsi0108@gmail.com</li>
+        </ul>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const fields = ["name", "email", "phone", "subject", "message"];
+    let valid = true;
+
+    fields.forEach(id => {
+      const input = document.getElementById(id);
+      const error = document.getElementById(id + "Error");
+      const value = input.value.trim();
+
+      if (id === "phone") {
+        if (!/^\d{10}$/.test(value)) {
+          input.classList.add("error");
+          input.classList.remove("valid");
+          error.textContent = "Invalid phone number (must be exactly 10 digits)";
+          valid = false;
+          return;
+        }
+      } else if (id === "email") {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(value)) {
+          input.classList.add("error");
+          input.classList.remove("valid");
+          error.textContent = "Invalid email format";
+          valid = false;
+          return;
+        }
+      } else if (!value) {
+        input.classList.add("error");
+        input.classList.remove("valid");
+        error.textContent = "This field is required";
+        valid = false;
+        return;
+      }
+
+      input.classList.remove("error");
+      input.classList.add("valid");
+      error.textContent = "";
+    });
+
+    const terms = document.getElementById("terms");
+    const termsError = document.getElementById("termsError");
+    if (!terms.checked) {
+      termsError.textContent = "You must accept the terms and conditions.";
+      terms.classList.add("error");
+      valid = false;
+    } else {
+      termsError.textContent = "";
+      terms.classList.remove("error");
+    }
+
+    if (valid) {
+      alert("Form submitted successfully!");
+      // You can send data here
+    }
+  });
+</script>
+
+</body>
+</html>
